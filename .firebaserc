@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "projectx-b4500": {
+      "hosting": {
+        "projectx": [
+          "projectx-b4500"
+        ]
+      }
+    }
+  }
+}
