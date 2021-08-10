@@ -13,6 +13,6 @@ export class AppComponent {
   name = "vasudev"
   items: Observable<any[]>;
   constructor(firestore: AngularFirestore) {
-    this.items = firestore.collection('lives').valueChanges();
+    this.items = firestore.collection('videos').valueChanges();
   }
 }

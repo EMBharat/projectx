@@ -268,18 +268,22 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   Welcome To Ex-Muslims Forum
+
+
+  <a routerLink="/article-com" routerLinkActive="active">First Component</a>
+  <a routerLink="/atrocities-com" routerLinkActive="active">Second Component</a>
 </div>
 
 <div class="content" role="main">
   Hello Fellow Ex-muslims,
   Defination of Ex-muslims: Anyone who formerly believed Islam to be peaceful, read the some part of Quran which preach
   violence or know the life of prophet and found nothing saintly and left the islam
-  <b>{{name}}</b>
   <ul>
     <li class="text" *ngFor="let item of items | async">
-      {{item}}
+      {{item.title}}
     </li>
   </ul>
+
 </div>
 
 <router-outlet></router-outlet>
